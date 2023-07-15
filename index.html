@@ -3,10 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Task-01</title>
+    <style>
+        th,td{
+            padding:8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sample github repository</h1>
-    <h2> scond commit</h2>
-</body>
+    <h1 style="text-align:center; text-decoration: underline;">Task One</h1>
+    <div class="mainbox">
+        <div style="float: left;" >
+            <form action="#" method="post">
+                <h2>01.APPLICATION FORM</h2><br>
+                <label for="name">Name : </label><input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                <label for="mail">Email : </label><input type="email" id="mail" name="mail" placeholder="Enter your email"><br><br>
+                <label >Gender : </label><input type="radio" id="male" name="gender"><label for="male">Male</label><input type="radio" id="female" name="gender"><label for="female">Female</label><br><BR>
+                <label>CHOOSE SKILLS</label><br><br>
+                <label for="html">HTML </label><input type="checkbox" id="html" name="skills[]">
+                <label for="css">CSS </label><input type="checkbox" id="css" name="skills[]">
+                <label for="js">JS </label><input type="checkbox" id="js" name="skills[]">
+                <label for="bootstrap">Bootstrap </label><input type="checkbox" id="bootstrap" name="skills[]">
+                <label for="react">React </label><input type="checkbox" id="react" name="skills[]"><br><br>
+                <label for="jobtype">JOB TYPE : </label>
+                <select name="job type" id="jobtype">
+                    <option value="">Front End Developer</option>
+                    <option value="">Back End Developer</option>
+                    <option value="">Fullstack Developer</option>
+                </select><br><br>
+                <label for="browser">Choose your browser from the list: </label><input type="text" id="browser" name="browser"><br><br>
+                <textarea name="" id="" placeholder="Give a brief summary about you" rows="1"></textarea><br><br>
+                <input type="submit" value="submit"> 
+            </form>
+        </div>
+        <div style="float:left; margin:0 60px 0 60px;">
+            <h2>02. Batch List</h2>
+            <ul style="line-height: 2;">
+                <li>SENCHOLA UNIVERSITY
+                    <Ol>
+                        <li>Fist Batch
+                            <ol type="A" >
+                                <li>Ravi</li>
+                                <li>Manol</li>
+                                <li>Sandhiya</li>
+                            </ol>
+                        </li>
+                        <li>Second Batch
+                            <ol type="I" >
+                                <li>Sundhar</li>
+                                <li>Saranya</li>
+                                <li>Nandhini</li>
+                            </ol>
+                        </li>
+                        <li>Third Batch
+                            <ol type="i" >
+                                <li>Monika</li>
+                                <li>Santhosh</li>
+                                <li>Kannan</li>
+                            </ol>
+                        </li>
+                    </Ol>
+                </li>
+            </ul>
+    
+        </div>
+        <div style="float: left; position: absolute; top:30%; right:250px;">
+            <h2>03. Courses</h2>
+            <table border="">
+                <tr style="padding: 30px;">
+                    <th>S.NO 1</th>
+                    <th>S.NO 2</th>
+                    <th>S.NO 3</th>
+                    <th>S.NO 4</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">REACT JS</td>
+                    <td>HTML</td>
+                    <td rowspan="2">REACT JS</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td colspan="2">JAVASCRIPT</td>
+                    <td colspan="2">BOOTSTRAP</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </body>
 </html>
